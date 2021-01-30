@@ -327,7 +327,7 @@ function upload() {
     document.getElementById("Upload").innerHTML = "Uploading!";
     console.log("fileInput: ", fileInput);
     console.log("fileInput: ", fileInput.files[0]);
-    // document.getElementById('profilePic').style.backgroundImage = `url(${fileInput.files[0]})`;
+    document.getElementById('profilePic').style.backgroundImage = `url(${fileInput.files[0]})`;
 
     let formData = new FormData();
     formData.append("myFile", fileInput.files[0]);
